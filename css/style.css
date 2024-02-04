@@ -1,0 +1,29 @@
+.loader {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader-inner {
+  width: 100px;
+  position: relative;
+  aspect-ratio: 1;
+}
+.loader-panel {
+  position: absolute;
+  inset: 0;
+  display: flex;
+}
+.panel {
+  flex: 1;
+  height: 100%;
+  background-color: rgb(34, 34, 34);
+}
+#bolt-rect {
+  transform: translateY(100%);
+}
+#bolt-path {
+  stroke-dashoffset: 0px;
+  stroke-dasharray: 0px 9999px;
+}
