@@ -1,17 +1,20 @@
 let tl = gsap.timeline();
 tl.to("#bolt-path", {
-  duration: 1,
-  strokeDasharray: 700,
+  strokeDasharray: 600,
+  duration: 2,
 });
 tl.to("#bolt-rect", {
-  duration: 1,
+  duration: 2,
   y: 0,
 });
-tl.to("svg", {
+tl.to(".loader-inner", {
   scale: 0,
 });
 tl.to(".panel", {
   y: "-100%",
   duration: 2,
-  stagger: 0.25,
+  stagger: 0.3,
+});
+tl.to(".loader", {
+  y: "-100%",
 });
